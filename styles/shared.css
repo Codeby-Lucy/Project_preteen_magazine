@@ -1,0 +1,103 @@
+/* NAVIGATION BAR STYLES======================================================== */
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #FAA39D;
+    padding: 10px 0; /* Border padding */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a shadow below navbar for depth */
+}
+
+/* Links in navigation bar */
+.navbar a {
+    color: black; 
+    padding: 8px 16px; /* Space around the links */
+    text-decoration: underline; /* Underlines text in the links */
+    transition: color 0.3s; /* Smooth transition for link colors */
+    font-size: 20px;
+}
+
+/* Text color change on hover */
+.navbar a:hover {
+    color: white; 
+}
+
+/* BODY STYLES======================================================== */
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Font family */
+  background-color: var(--backgroundColour); /* Background color */
+  color: black; 
+  margin: 0;
+}
+
+/* Logo - "go back to home page" styles */
+#logo {
+  text-align: center; 
+  transform: scale(0.5) /* Resizes image to the needed scale */
+}
+
+/* FOOTER STYLES ================================================= */
+
+footer {
+  background-color: #FAA39D;
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+
+  /* Flex layout for centering content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+
+  /* Margin adjustments */
+  margin-bottom: 0px;
+  margin-top: 4%;
+}
+
+/* Styling for the "contacts" text */
+#contacts {
+  margin-right: auto;  /* Text box on the right side */
+  padding-left: 50px; /* Text starts at 50px from the left */
+  text-align: left; /* Text aligns to the left side */
+  color: black;
+}
+
+/* Styling for the "All Rights Reserved" text */
+#rights, #end {
+  text-align: center; /* Center the text horizontally */
+  font-size: 14px; 
+  color: black; 
+}
+
+/* Styling for text size, though Bootstrap has default sizes for text */
+h2{
+  font-size: 30px; 
+}
+h3{
+  font-size: 22px; 
+}
+h4{
+  font-size: 15px; 
+}
+
+/* To adapt cards for screens up to 768 pixels wide (like tablets) */
+@media (max-width: 768px) {
+    #contacts {
+        padding-top: 25px; /* Text starts at 50px from the left */
+        font-size: 12px;
+    }
+}
+
+/* To adapt cards for screens up to 480 pixels wide (like mobile phones) */
+@media (max-width: 480px) {
+    #contacts {
+        padding-top: 25px; /* Text starts at 50px from the left */
+        font-size: 10px;
+    }
+    #rights, #end {
+      font-size: 10px; 
+    }
+}
